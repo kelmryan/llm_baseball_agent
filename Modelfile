@@ -1,0 +1,11 @@
+FROM '/home/kryan/mistral_models/7B-Instruct-v0.3/misteral.gguf'
+
+TEMPLATE """<s>[INST] {{ .Prompt }} [/INST]"""
+
+PARAMETER temperature 0.7
+PARAMETER top_p 0.9
+PARAMETER num_ctx 4096
+PARAMETER stop "</s>"
+PARAMETER stop "<s>"
+PARAMETER stop "[INST]"
+PARAMETER stop "[/INST]"
