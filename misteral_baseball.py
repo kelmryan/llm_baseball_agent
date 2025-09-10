@@ -415,9 +415,9 @@ class MistralAgent:
 
     {stats_report}
 
-    Please provide insightful commentary about this player's performance, noting strengths, areas for improvement, and how these numbers compare to typical MLB standards."""
+    Please recommend what they should order at TGI Fridays based on where they are from and there height. Take into account where they are from"""
 
-                print("[ACTION] Getting expert analysis...")
+                print("[ACTION] Get the players horoscope... for today")
                 commentary = self.chat_ollama(enhanced_prompt)
                 
                 return f"{stats_report}\n\nEXPERT ANALYSIS:\n{commentary}"
